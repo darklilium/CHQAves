@@ -1,0 +1,323 @@
+$chqaves_bgColor : ghostwhite;
+
+//Map
+.esriSimpleSliderTL {
+    top: 4em;
+    visibility: hidden;
+}
+//HTML
+.bodychqaves{
+  width: 100%;
+  height: 100vh;
+
+}
+
+//chqaves frontOffice
+
+.mychqaves_FrontOffice{
+  height: inherit;
+}
+
+.wrapper_chqaves{
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+}
+
+.chqaves_map_div{
+  height: inherit;
+}
+
+.wrapper_factibilidadLeft{
+  position: inherit;
+  width: 40%;
+  background: $chqaves_bgColor;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper_factibilidadRight{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  width: 60%;
+}
+
+.wrapper_factibilidadCenter{
+  display: flex;
+    z-index: 1;
+    flex-direction: column;
+    height: inherit;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+//media screens for responsive design 'till 640px max'
+@media screen and (min-width: 0px) and (max-width: 640px) and (orientation: portrait)  {
+  .bodychqaves {
+    width: 100%;
+    height: inherit;
+  }
+
+  .wrapper_chqaves {
+    height: inherit;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .wrapper_factibilidadLeft {
+    width: 100%;
+    background: $chqaves_bgColor;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .wrapper_factibilidadRight {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      height: inherit;
+      width: 100%;
+      height: 320px;
+  }
+
+}
+
+//media screens for responsive design 'till 640px max'
+@media screen and (min-width: 0px) and (max-width: 640px) and (orientation: landscape)  {
+  .bodychqaves {
+    width: 100%;
+    height: inherit;
+  }
+
+  .chqaves_map_div{
+    height: 640px;
+    position: fixed;
+  }
+
+  .wrapper_chqaves {
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+  }
+  .wrapper_factibilidadLeft {
+    width: 100%;
+    background: $chqaves_bgColor;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .wrapper_factibilidadRight {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      height: inherit;
+      width: 100%;
+      height: inherit;
+  }
+
+}
+
+
+
+
+
+.LayerList__legend{
+  font-size: 11px;
+}
+
+.wrapper_chqavesAdd{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+
+.chqaves_hr{
+  border: 1px;
+    border-style: inset;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+
+.chqaves_groupbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.chqaves-input{
+  width: 85%;
+}
+
+.chqaves_submitButton{
+  width: 100%;
+}
+
+.chqaves-selectFromMapButton{
+  width: 3em;
+  margin: 0 0 0 0.5em;
+}
+
+.chqaves_hr-subtitle {
+
+    border-style: ridge;
+    width: 100%;
+    color:rgba(0, 0, 0, 0.04);
+
+    margin: 0px;
+}
+/* Checkbox CSS */
+/* Icons :To start, hide the original checkbox.*/
+/* Hide the Ordinary Checkbox */
+.chqaves_ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chqaves_BigGroupbox{
+  display: flex;
+  flex-direction: column;
+  padding: 0.8em 1em 0.8em 1em;
+  font-size: 11px;
+}
+
+
+.chqaves_selectInput{
+  width: 99%;
+}
+
+.chqaves_selectEmpalme{
+  max-width: 100%;
+}
+
+.chqaves_groupbox-box{
+  width: 50%
+}
+input[type="checkbox"] {
+    display: none;
+}
+/* Checkbox Icons */
+label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    padding: 16px 28px 0 0;
+    font-weight: normal;
+
+}
+
+label:before, label:after {
+    font-family: FontAwesome;
+    font-size: 0px;
+    /*absolutely positioned*/
+    position: absolute; top: 0; left: -49px; right: 10px;
+}
+
+label:before {
+    content: '\f096'; /*checkbox unchecked */
+}
+label:after {
+    content: '\f00c'; /*checkbox checked*/
+    max-width: 0;
+    overflow: hidden;
+    opacity: 0.5;
+    font-size: 15px;
+    top: 16px;
+    left: -25px;
+    color: #1EAB06;
+
+-webkit-transition: all 0.50s;
+    -moz-transition: all 0.50s;
+    -o-transition: all 0.50s;
+     transition: all 0.50s;
+}
+
+/* Animating the Checkbox Icon */
+input[type="checkbox"]:checked + label:after {
+    max-width: 25px;
+    opacity: 1;
+    margin-right: 90px;
+}
+
+.chqaves__toggleBtnLabel{
+  display: flex;
+  flex-direction: inherit;
+  align-items: center;
+  padding-left: 1em;
+  display: none;
+}
+
+.chqaves_btnSelectCalle{
+  color: black;
+  border-color: initial;
+}
+
+.chqaves_btnSelectPoste{
+  color: black;
+    border-color: initial;
+}
+
+.chqaves_btnSelectDireccion{
+  color: black;
+  border-color: black;
+  border-style: solid;
+}
+
+.chqaves_input-solo{
+  width: 99%;
+  display: flex;
+  height: 3em;
+}
+
+.chqaves_group{
+  width: 50%;
+}
+
+.chqaves_radiobutton{
+  margin-right: 0.3em;
+  margin-top: 0;
+}
+
+.chqaves_radiobuttonGroup{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+// TAB DIRECCIONES
+
+.chqaves_addressGroup{
+  width: 100%;
+}
+
+.chqaves_p{
+
+}
+.obligatorio{
+  margin-bottom: 1em;
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+font-size: xx-small;
+}
+
+
+//media screens for responsive design 'till 640px max'
+@media screen and (min-width: 0px) and (max-width: 1240px) and (orientation: portrait)  {
+  .chqaves_ul{
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 1240px) and (orientation: landscape)  {
+  .chqaves_ul{
+    flex-direction: column;
+  }
+}

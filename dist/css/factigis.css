@@ -1,0 +1,112 @@
+.bodyfactigisdashboard { background-image: url("images/factigis_images/dashboardbg.jpg"); background-size: 100% 100%; background-attachment: fixed; }
+
+.wrapper_factigisDashboard { display: flex; flex-wrap: wrap; flex-direction: row; align-items: stretch; justify-content: center; width: 100%; padding: 0; margin: 0; margin-top: 6em; }
+
+.factigisDashboard_moduleContainer { display: flex; height: 10em; align-items: center; padding: 3em 3em 3em 1.5em; margin: 0.5em; -webkit-box-shadow: -1px 4px 35px -5px rgba(0, 0, 0, 0.52); -moz-box-shadow: -1px 4px 35px -5px rgba(0, 0, 0, 0.52); box-shadow: -1px 4px 35px -5px rgba(0, 0, 0, 0.52); }
+
+.factigisDashboard-aLink { text-decoration: none; font-family: arial; color: white; font-weight: bolder; }
+
+.factigisDashboard-divimg { width: 6em; height: 6em; margin-right: 1em; }
+
+.factigisDashboard-img { width: inherit; }
+
+.esriSimpleSliderTL { top: 4em; visibility: hidden; }
+
+.bodyfactigis { width: 100%; height: 100vh; }
+
+.myFactigis_FrontOffice { height: inherit; }
+
+.wrapper_factigis { height: inherit; display: flex; flex-direction: row; }
+
+.factigis_map_div { height: inherit; }
+
+.wrapper_factibilidadLeft { position: inherit; width: 40%; background: ghostwhite; height: inherit; display: flex; flex-direction: column; }
+
+.wrapper_factibilidadRight { display: flex; flex-direction: column; position: fixed; height: inherit; width: 60%; }
+
+.wrapper_factibilidadCenter { display: flex; z-index: 1; flex-direction: column; height: inherit; position: absolute; flex-wrap: wrap; justify-content: space-around; }
+
+@media screen and (min-width: 0px) and (max-width: 640px) and (orientation: portrait) { .bodyfactigis { width: 100%; height: inherit; }
+  .wrapper_factigis { height: inherit; display: flex; flex-direction: column-reverse; }
+  .wrapper_factibilidadLeft { width: 100%; background: ghostwhite; height: inherit; display: flex; flex-direction: column; position: relative; }
+  .wrapper_factibilidadRight { display: flex; flex-direction: column; position: relative; height: inherit; width: 100%; height: 320px; } }
+
+@media screen and (min-width: 0px) and (max-width: 640px) and (orientation: landscape) { .bodyfactigis { width: 100%; height: inherit; }
+  .factigis_map_div { height: 640px; position: fixed; }
+  .wrapper_factigis { height: inherit; display: flex; flex-direction: row; }
+  .wrapper_factibilidadLeft { width: 100%; background: ghostwhite; height: inherit; display: flex; flex-direction: column; position: relative; }
+  .wrapper_factibilidadRight { display: flex; flex-direction: column; position: relative; height: inherit; width: 100%; height: inherit; } }
+
+/* .LayerList__wrapper{ z-index: 4; margin-top: 3.5em; position: absolute; padding: 0.5em; margin-left: 1em; display: inline-block; width: auto; border-radius: 0; background-color: rgba(255, 255, 255, 0.6); } .LayerList__fieldset{ display: flex; } .LayerList__legend{ font-size: 11px; padding: 0px; margin: 0px; } .LayerList__checkbox{ } .LayerList__h6{ font-size: xx-small; margin-bottom: 0px; margin-top: 0.8em; } .LayerList__checkbox-div{ display: flex; width: auto; flex-direction: row; } */
+.wrapper_factigisAdd { display: flex; flex-direction: column; justify-content: space-between; padding: 1em; }
+
+.factigis_hr { border: 1px; border-style: inset; width: 100%; margin-bottom: 0; }
+
+.factigis_groupbox { display: flex; flex-direction: row; justify-content: space-between; }
+
+.factigis-input { width: 85%; }
+
+.factigis_submitButton { width: 100%; }
+
+.factigis-selectFromMapButton { width: 3em; margin: 0 0 0 0.5em; }
+
+.factigis_hr-subtitle { border-style: ridge; width: 100%; color: rgba(0, 0, 0, 0.04); margin: 0px; }
+
+/* Checkbox CSS */
+/* Icons :To start, hide the original checkbox.*/
+/* Hide the Ordinary Checkbox */
+.factigis_ul { list-style: none; display: flex; justify-content: space-between; }
+
+.factigis_BigGroupbox { display: flex; flex-direction: column; padding: 0.8em 1em 0.8em 1em; font-size: 11px; }
+
+.factigis_selectInput { width: 99%; }
+
+.factigis_selectEmpalme { max-width: 100%; }
+
+.factigis_groupbox-box { width: 50%; }
+
+input[type="checkbox"] { display: none; }
+
+/* Checkbox Icons */
+label { position: relative; padding-left: 30px; cursor: pointer; padding: 16px 28px 0 0; font-weight: normal; }
+
+label:before, label:after { font-family: FontAwesome; font-size: 0px; /*absolutely positioned*/ position: absolute; top: 0; left: -49px; right: 10px; }
+
+label:before { content: '\f096'; /*checkbox unchecked */ }
+
+label:after { content: '\f00c'; /*checkbox checked*/ max-width: 0; overflow: hidden; opacity: 0.5; font-size: 15px; top: 16px; left: -25px; color: #1EAB06; -webkit-transition: all 0.50s; -moz-transition: all 0.50s; -o-transition: all 0.50s; transition: all 0.50s; }
+
+/* Animating the Checkbox Icon */
+input[type="checkbox"]:checked + label:after { max-width: 25px; opacity: 1; margin-right: 90px; }
+
+.factigis__toggleBtnLabel { display: flex; flex-direction: inherit; align-items: center; padding-left: 1em; display: none; }
+
+.factigis_btnSelectCalle { color: black; border-color: initial; }
+
+.factigis_btnSelectPoste { color: black; border-color: initial; }
+
+.factigis_btnSelectDireccion { color: black; border-color: black; border-style: solid; }
+
+.factigis_input-solo { width: 99%; display: flex; height: 3em; }
+
+.factigis_group { width: 50%; }
+
+.factigis_radiobutton { margin-right: 0.3em; margin-top: 0; }
+
+.factigis_radiobuttonGroup { display: flex; justify-content: space-around; align-items: center; }
+
+.factigis_addressGroup { width: 100%; }
+
+.obligatorio { margin-bottom: 1em; display: flex; flex-wrap: wrap; justify-content: flex-start; font-size: xx-small; }
+
+@media screen and (min-width: 0px) and (max-width: 1240px) and (orientation: portrait) { .factigis_ul { flex-direction: column; } }
+
+@media screen and (min-width: 0px) and (max-width: 1240px) and (orientation: landscape) { .factigis_ul { flex-direction: column; } }
+
+.LayerList__wrapper { z-index: 4; margin-top: 3.5em; position: absolute; padding: 0.5em; margin-left: 1em; display: inline-block; width: auto; border-radius: 0; background-color: rgba(255, 255, 255, 0.6); }
+
+.LayerList__checkbox-div { display: flex; }
+
+.LayerList__legend { font-size: inherit; margin-bottom: 0em; font-weight: 700; }
+
+.LayerList__legend { font-size: 11px; }
